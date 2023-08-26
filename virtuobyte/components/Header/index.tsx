@@ -5,12 +5,14 @@ import menuData from "./menuData";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useTheme } from "next-themes";
+import { VscChromeClose } from "react-icons/vsc";
+
 import { Menu } from "@/types/menu";
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const { theme, setTheme } = useTheme();
-  
+
   return (
     <>
       <div className="flex items-center justify-between transition duration-300 ease-in-out">
@@ -18,13 +20,24 @@ const Navbar: React.FC = () => {
 
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">
-            <RxHamburgerMenu
-              size={28}
-              className="dark:text-white cursor-pointer text-black "
-              onClick={() => {
-                setMenu(!menu);
-              }}
-            />
+            {menu ? (
+              <VscChromeClose
+                size={26}
+                className="dark:text-white cursor-pointer text-black "
+                onClick={() => {
+                  setMenu(!menu);
+                }}
+              />
+            ) : (
+              <RxHamburgerMenu
+                size={26}
+                className="dark:text-white cursor-pointer text-black "
+                onClick={() => {
+                  setMenu(!menu);
+                }}
+              />
+            )}
+
             <ThemeToggler />
           </div>
         </div>
