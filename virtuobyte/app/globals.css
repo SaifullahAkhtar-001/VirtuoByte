@@ -70,13 +70,17 @@ font-family: 'Montserrat', sans-serif;
   opacity: 1;
 }
 
+
+
+
+
 #menu-background-pattern-dark {
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.1) 9%,
     transparent 9%
   );
   background-position: 0% 0%;
-  background-size: 6vmin 6vmin;
+  background-size: 9vmin 9vmin;
   height: 100%;
   left: 0px;
   position: absolute;
@@ -87,19 +91,7 @@ font-family: 'Montserrat', sans-serif;
   z-index: 1;
 }
 
-#menu-background-pattern {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.315) 9%, transparent 9%);
-   background-position: 0% 0%;
-  background-size: 6vmin 6vmin;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  transition: opacity 800ms ease, background-size 800ms ease,
-    background-position 800ms ease;
-  width: 100%;
-  z-index: 1;
-}
+
 .menu-item {
   color: black;
   cursor: pointer;
@@ -111,11 +103,70 @@ font-family: 'Montserrat', sans-serif;
   transition: opacity 400ms ease;
 }
 
-@media screen and (max-width: 500px) {
-  .menu-item {
-    font-size: 40px;
-  }
-  #menu-items {
-    margin-left: 0;
-  }
+#menu[data-active-index="0"] > #menu-background-pattern-dark {
+  background-position: 0% -25%;
 }
+
+#menu[data-active-index="1"] > #menu-background-pattern-dark {
+  background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern-dark {
+  background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern-dark {
+  background-position: 0% -100%;
+}
+
+#menu[data-active-index="0"] > #menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+  background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+  background-position: center 60%;
+}
+
+#menu-items:hover ~ #menu-background-pattern-dark {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
+
+#menu-items:hover ~ #menu-background-image {
+  background-size: 100vmax;
+  opacity: 0.1;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
+
+
+#menu-background-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.315) 9%, transparent 9%);
+   background-position: 0% 0%;
+   background-position: 0% 0%;
+   background-size: 9vmin 9vmin;
+   height: 100%;
+   left: 0px;
+   position: absolute;
+   top: 0px;
+   transition: opacity 800ms ease, background-size 800ms ease,
+     background-position 800ms ease;
+   width: 100%;
+   z-index: 1;
+}
+
+
