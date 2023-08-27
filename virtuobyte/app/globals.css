@@ -70,10 +70,6 @@ font-family: 'Montserrat', sans-serif;
   opacity: 1;
 }
 
-
-
-
-
 #menu-background-pattern-dark {
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.1) 9%,
@@ -90,7 +86,6 @@ font-family: 'Montserrat', sans-serif;
   width: 100%;
   z-index: 1;
 }
-
 
 .menu-item {
   color: black;
@@ -153,20 +148,26 @@ font-family: 'Montserrat', sans-serif;
   opacity: 1;
 }
 
-
 #menu-background-pattern {
   background-image: radial-gradient(rgba(0, 0, 0, 0.315) 9%, transparent 9%);
-   background-position: 0% 0%;
-   background-position: 0% 0%;
-   background-size: 9vmin 9vmin;
-   height: 100%;
-   left: 0px;
-   position: absolute;
-   top: 0px;
-   transition: opacity 800ms ease, background-size 800ms ease,
-     background-position 800ms ease;
-   width: 100%;
-   z-index: 1;
+  background-position: 0% 0%;
+  background-position: 0% 0%;
+  background-size: 9vmin 9vmin;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 1;
 }
 
-
+@media screen and (max-width: 500px) {
+  .menu-item {
+    font-size: 40px;
+  }
+  #menu-items {
+    margin-left: 0;
+  }
+}
