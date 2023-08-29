@@ -49,9 +49,8 @@ const Navbar: React.FC = () => {
               <Link
                 href={data.path!}
                 key={data.id}
-                className={`text-black dark:text-white menu-item ${
-                  activeIndex === data.id ? "active" : ""
-                }`}
+                className={`text-black dark:text-white menu-item ${activeIndex === data.id ? "active" : ""
+                  }`}
                 onMouseOver={() => {
                   setActiveIndex(data.id);
                 }}
@@ -67,9 +66,8 @@ const Navbar: React.FC = () => {
                 : "menu-background-pattern"
             }
             style={{
-              backgroundPosition: `0% -${
-                activeIndex ? (activeIndex + 1) * 25 : 0
-              }%`,
+              backgroundPosition: `0% -${activeIndex ? (activeIndex + 1) * 25 : 0
+                }%`,
             }}
           ></div>
         </div>
