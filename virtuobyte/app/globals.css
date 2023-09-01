@@ -6,6 +6,9 @@
 font-family: 'Montserrat', sans-serif;
 } */
 
+*{
+  scroll-behavior: smooth;
+}
 #menu {
   align-items: center;
   display: flex;
