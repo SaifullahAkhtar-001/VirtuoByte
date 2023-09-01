@@ -16,8 +16,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="flex items-center justify-between transition duration-300 ease-in-out">
-        <div className="z-[50]">Logo</div>
-
+        <div className="z-[50] text-[21px]">VirtuoByte</div>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">
             {menu ? (
@@ -38,7 +37,7 @@ const Navbar: React.FC = () => {
               />
             )}
 
-            <ThemeToggler />
+            {/* <ThemeToggler /> */}
           </div>
         </div>
       </div>

@@ -1,20 +1,28 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
+import HeroSVG from '@/public/UI-UX team-bro.svg';
+import Image from 'next/image';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 const Index: React.FC = () => {
+
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["end end", "end start"]
+
+  });
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+
   return (
-    <div className='flex flex-col justify-between  '>
-      <div className='text-[75px] w-[90vw] py-8'>
-        Unleashing Technological Excellence
-      </div>
-      <div className='flex items-center w-[90vw] justify-between '>
-        <div className='text-lg w-[750px] '>
-          Elevate your business with VirtuoByte: Where Innovation Meets Functionality, delivering premier web and software solutions for empowered success.
+    <motion.div style={{ opacity }} ref={targetRef} className='flex min-[1201px]:items-center h-screen max-[1200px]:flex-col '>
+      <div className='flex flex-col '>
+        <div className='text-[35px] break-words  py-[3rem]'>
+          Elevating Businesses through Innovative Software Solutions and Digital Excellence.
         </div>
-        <button className='bg-black dark:bg-white dark:text-black text-white  px-4 py-2 rounded-lg'>
-          Contact Us
-        </button>
       </div>
-    </div>
+      <Image src={HeroSVG} height={100} width={100} alt='Hero Image' className='min-[1201px]:w-full' />
+    </motion.div>
   );
 }
 
