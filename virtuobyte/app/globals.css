@@ -54,14 +54,13 @@ font-family: 'Montserrat', sans-serif;
 
 #menu-items:hover ~ #menu-background-pattern {
   background-size: 11vmin 11vmin;
-  opacity: 0.5;
+
 }
 
 #menu-items:hover ~ #menu-background-image {
   background-size: 100vmax;
-  opacity: 0.1;
+  
 }
-
 #menu-items:hover > .menu-item {
   opacity: 0.3;
 }
@@ -132,12 +131,12 @@ font-family: 'Montserrat', sans-serif;
 
 #menu-items:hover ~ #menu-background-pattern-dark {
   background-size: 11vmin 11vmin;
-  opacity: 0.5;
+
 }
 
 #menu-items:hover ~ #menu-background-image {
   background-size: 100vmax;
-  opacity: 0.1;
+
 }
 
 #menu-items:hover > .menu-item {
@@ -152,6 +151,7 @@ font-family: 'Montserrat', sans-serif;
   background-image: radial-gradient(rgba(0, 0, 0, 0.315) 9%, transparent 9%);
   background-position: 0% 0%;
   background-position: 0% 0%;
+
   background-size: 9vmin 9vmin;
   height: 100%;
   left: 0px;

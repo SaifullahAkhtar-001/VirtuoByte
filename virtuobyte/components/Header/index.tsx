@@ -15,7 +15,8 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between transition duration-300 ease-in-out">
+    
+      <div className="flex items-center sticky justify-between z-50 transition duration-300 ease-in-out">
         <div className="z-[50] text-[21px]">VirtuoByte</div>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">
@@ -28,6 +29,7 @@ const Navbar: React.FC = () => {
                 }}
               />
             ) : (
+
               <RxHamburgerMenu
                 size={26}
                 className="dark:text-white cursor-pointer text-black "
@@ -63,6 +65,11 @@ const Navbar: React.FC = () => {
               theme === "dark"
                 ? "menu-background-pattern-dark"
                 : "menu-background-pattern"
+            }
+            className={
+              theme === "dark"
+                ? "bg-black"
+                : "bg-white"
             }
             style={{
               backgroundPosition: `0% -${activeIndex ? (activeIndex + 1) * 25 : 0
