@@ -21,7 +21,7 @@ const Index: React.FC = () => {
           Elevating Businesses through Innovative Software Solutions and Digital Excellence.
         </div>
       </div>
-      <Image src={HeroSVG} height={100} width={100} alt='Hero Image' className='min-[1201px]:w-full' />
+      <Image src={HeroSVG} height={100} width={100} alt='Hero Image' className='w-full' />
     </motion.div>
   );
 }
