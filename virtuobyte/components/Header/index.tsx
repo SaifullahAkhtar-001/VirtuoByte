@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
               />
             )}
 
-            {/* <ThemeToggler /> */}
+            <ThemeToggler />
           </div>
         </div>
       </div>
