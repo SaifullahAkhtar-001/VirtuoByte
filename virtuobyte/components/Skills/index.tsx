@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
             className={s.skillText}
             style={{ opacity: opacityForBlock(progress, 0) }}
           >
-           At Virtuo Byte, we're all about making businesses flourish in the ever-evolving digital world. 
+           At Virtuo Byte, we&apos;re all about making businesses flourish in the ever-evolving digital world. 
           </div>
           <span
             className={`${s.skillText} inline-block after:content-['_']`}

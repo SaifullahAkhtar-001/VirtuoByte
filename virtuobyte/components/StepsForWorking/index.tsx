@@ -7,7 +7,7 @@ import {
   } from "framer-motion";
   
 import Image from './Image'
-const index = () => {
+const Index = () => {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
       stiffness: 100,
@@ -16,13 +16,14 @@ const index = () => {
     });
   return (
     <>
-      {[1, 2, 3, 4, 5].map((image) => (
-        <Image id={image} />
-      ))}
+      {/* {[1, 2, 3, 4, 5].map((image) => (
+        <Image key={image} id={image} />
+
+      ))} */}
       <motion.div className="progress" style={{ scaleX }} />
     
     </>
   )
 }
 
-export default index
+export default Index
