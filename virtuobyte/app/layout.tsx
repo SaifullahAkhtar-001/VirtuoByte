@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import { Providers } from "./providers";
 import { Montserrat } from "next/font/google";
-
+import ScrollObserver from "@/utils/scroll-observer";
 export const metadata: Metadata = {
   title: "VirtuoByte",
   description: "Elevating Online Presence with Premier Web Services and Solutions.",
@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`dark:bg-black bg-white max-[1000px]:mx-8 mx-16 my-8 ${inter.className}`}>
+        <ScrollObserver>
         <Providers>
           <Header />
           {children}
         </Providers>
+        </ScrollObserver>
       </body>
     </html>
   );
