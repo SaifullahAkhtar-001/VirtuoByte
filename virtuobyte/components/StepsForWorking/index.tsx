@@ -18,7 +18,7 @@ const Index = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex gap-8 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[2rem]">
       <div className="flex flex-col gap-[1.5rem] flex-1">
         <div className="text-[28px] font-[600]">
           The VirtuoByte Solution Journey in 5 Comprehensive Steps!
@@ -31,7 +31,7 @@ const Index = () => {
           just met, but masterfully attended to.
         </div>
       </div>
-      <div className="flex flex-1 flex-col gap-[1.5rem]">
+      <div className="flex flex-1 flex-col gap-[1.5rem] max-[1000px]:gap-[2.5rem] ">
         {StepsData &&
           StepsData.map((steps: Steps) => (
             <div className="group" key={steps.id}>
@@ -45,14 +45,14 @@ const Index = () => {
               >
                 {steps.title}
                 {showDescriptions[steps.id] ? (
-                  <BiUpArrowAlt />
+                  <BiUpArrowAlt  className='text-[22px]'/>
                 ) : (
-                  <BiDownArrowAlt />
+                  <BiDownArrowAlt className='text-[22px]'/>
                 )}
               </div>
               {showDescriptions[steps.id] && (
                 <div
-                  className={`text-gray-600 dark:text-gray-400   transition duration-300 ease-in-out word-break  ${
+                  className={`text-gray-600 dark:text-gray-400  py-6  transition duration-300 ease-in-out word-break  ${
                     showDescriptions[steps.id] ? "" : ""
                   } `}
                 >

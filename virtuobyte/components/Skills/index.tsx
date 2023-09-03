@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
   }
   return (
     <div ref={refContainer} className=' dark:text-white text-black'>
-      <div className='min-h-screen  flex flex-col justify-center items-center text-[3rem] max-[782px]:text-[1.5rem] max-[500px]:text-[28px] my-[1rem] min-[10000px]:m-8 tracking-wide font-[600]'>
+      <div className='min-h-screen  flex flex-col justify-center items-center text-[3rem] max-[782px]:text-[1.5rem] max-[500px]:text-[28px] my-[4rem] max-[501px]:my-[3rem] max-[782px]:my-[1rem] tracking-wide font-[600]'>
         <div className='leading-[1.15] flex flex-col  gap-14 min-[500px]:items-center break-words min-[500px]:text-center'>
           <div
             className={s.skillText}
