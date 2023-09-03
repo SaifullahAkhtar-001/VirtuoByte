@@ -45,9 +45,11 @@ const Index = () => {
               >
                 {steps.title}
                 {showDescriptions[steps.id] ? (
-                  <BiUpArrowAlt  className='text-[22px]'/>
+                  <span>
+                  <BiUpArrowAlt  className='text-[22px]'/></span>
                 ) : (
-                  <BiDownArrowAlt className='text-[22px]'/>
+                  <span>
+                  <BiDownArrowAlt className='text-[22px]'/></span>
                 )}
               </div>
               {showDescriptions[steps.id] && (
