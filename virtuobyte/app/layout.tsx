@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`dark:bg-black bg-white max-[1000px]:mx-8 mx-16 my-8 ${inter.className}`}>
+      <body className={`dark:bg-black bg-white  my-8 ${inter.className}`}>
         <ScrollObserver>
         <Providers>
           <Header />

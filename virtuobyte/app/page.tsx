@@ -14,9 +14,12 @@ const page:React.FC = () => {
     <Hero/>
     <ScrollToTop top={true}/>
     <Skills/>
-    {/* <StreamlinedExperience/> */}
-    {/* <Works/> */}
     <StepsForWorking/>
+    <div className="relative z-10 w-full overflow-x-clip">
+    <StreamlinedExperience/>
+    </div>
+    {/* <Works/> */}
+   
     </>
   )
 }
