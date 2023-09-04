@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   return (
     <>
     
-      <div className="flex items-center sticky max-[1000px]:mx-8 mx-16 justify-between z-50 transition duration-300 ease-in-out">
+      <div className="flex items-center sticky justify-between z-50 transition duration-300 ease-in-out">
         <div className="z-[50] text-[21px]">VirtuoByte</div>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">

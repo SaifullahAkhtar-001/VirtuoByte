@@ -18,7 +18,7 @@ const Index = () => {
   };
 
   return (
-    <div className="flex gap-8  max-[1000px]:mx-8 mx-16 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[2rem]">
+    <div className="flex gap-8 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[2rem]">
       <div className="flex flex-col gap-[1.5rem] flex-1">
         <div className="text-[28px] font-[600]">
           The VirtuoByte Solution Journey in 5 Comprehensive Steps!
@@ -54,7 +54,7 @@ const Index = () => {
               </div>
               {showDescriptions[steps.id] && (
                 <div
-                  className={`text-gray-600 dark:text-gray-400  py-6  transition duration-300 ease-in-out word-break  ${
+                  className={`text-gray-600 dark:text-gray-400  pt-4 transition duration-300 ease-in-out word-break  ${
                     showDescriptions[steps.id] ? "" : ""
                   } `}
                 >
