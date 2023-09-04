@@ -22,7 +22,6 @@ const config: Config = {
         text: "var(--color-text)",
         background: "var(--color-background)",
       },
-    
     },
   },
   plugins: [],

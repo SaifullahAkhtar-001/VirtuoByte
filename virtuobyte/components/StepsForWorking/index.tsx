@@ -36,9 +36,9 @@ const Index = () => {
           StepsData.map((steps: Steps) => (
             <div className="group" key={steps.id}>
               <div
-                className={`border-b flex items-center justify-between font-[500] text-[20px] group-hover:dark:border-gray-400 group-hover:border-gray-600 transition duration-300 ease-in-out group-hover:dark:text-gray-400 group-hover:text-gray-600 cursor-pointer dark:border-white border-black ${
+                className={`border-b flex items-center justify-between font-[500] text-[20px] transition duration-300 ease-in-out  cursor-pointer dark:border-white border-black ${
                   showDescriptions[steps.id]
-                    ? "text-gray-600 dark:text-gray-400  dark:border-gray-400 border-gray-600"
+                    ? ""
                     : ""
                 } `}
                 onClick={() => toggleDescription(steps.id)}
@@ -54,7 +54,7 @@ const Index = () => {
               </div>
               {showDescriptions[steps.id] && (
                 <div
-                  className={`text-gray-600 dark:text-gray-400  pt-4 transition duration-300 ease-in-out word-break  ${
+                  className={` pt-4 transition duration-300 ease-in-out word-break  ${
                     showDescriptions[steps.id] ? "" : ""
                   } `}
                 >
