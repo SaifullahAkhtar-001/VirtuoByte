@@ -10,10 +10,9 @@ import {
   WorkRight,
 } from "@/utils/works";
 
-type Props = {};
-
+import PinkPanda from '@/public/assets/works/pinkpanda.png'
 const Works = () => (
-  <TileWrapper numOfPages={4}>
+  <TileWrapper numOfPages={3}>
     <div className="absolute h-full w-full">
       <WorkBackground />
     </div>
@@ -24,88 +23,7 @@ const Works = () => (
       <Tile
         page={0}
         renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
-            <WorkLeft progress={progress}>
-              <span>We designed and developed</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://www.storiapp.co/">Stori</WorkLink>
-                &#x27;s face filters.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-              <div className="relative">
-                <div className="absolute rounded-[6%] w-[84.5%] left-[7.7%] top-[2.7%] overflow-hidden">
-                  <video
-                    id="coinbase-video"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    width="100%"
-                  >
-                    <source src="/assets/works/stori.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <Image
-                  src="/assets/iphone-bezels.webp"
-                  layout="responsive"
-                  width={840}
-                  className="absolute top-0 left-0 right-0 bottom-0"
-                  height={1620}
-                  alt="Stori"
-                />
-              </div>
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
-      <Tile
-        page={1}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
-            <WorkLeft progress={progress}>
-              <span>We made</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://www.coinbase.com/">
-                  Coinbase Wallet
-                </WorkLink>{" "}
-                faster.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-              <div className="relative">
-                <div className="absolute rounded-[6%] w-[84.5%] left-[7.7%] top-[2.7%] overflow-hidden">
-                  <video
-                    id="coinbase-video"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    width="100%"
-                  >
-                    <source
-                      src="/assets/works/coinbase-wallet.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-                <Image
-                  src="/assets/iphone-bezels.webp"
-                  layout="responsive"
-                  width={840}
-                  className="absolute top-0 left-0 right-0 bottom-0"
-                  height={1620}
-                  alt="Stori"
-                />
-              </div>
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
-      <Tile
-        page={2}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
             <WorkLeft progress={progress}>
               <span>We built</span>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
@@ -114,40 +32,58 @@ const Works = () => (
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
-              <Image
-                src="/assets/works/pinkpanda.png"
-                layout="responsive"
-                width={840}
-                height={1620}
+              <img
+                src='/assets/works/pinkpanda.png'
                 alt="Pink Panda"
+                className="w-1/2"
               />
             </WorkRight>
           </div>
         )}
       ></Tile>
-      <Tile
-        page={3}
+       <Tile
+        page={1}
         renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
             <WorkLeft progress={progress}>
-              <span>We helped</span>
+              <span>We built</span>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://showtime.io/">Showtime</WorkLink> ship
-                faster.
+                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                &#x27;s app.
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
-              <Image
-                src="/assets/works/showtime.png"
-                layout="responsive"
-                width={840}
-                height={1620}
-                alt="Showtime"
+            <img
+                src='/assets/works/pinkpanda.png'
+                alt="Pink Panda"
+                className="w-1/2"
               />
             </WorkRight>
           </div>
         )}
       ></Tile>
+        <Tile
+        page={2}
+        renderContent={({ progress }) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
+            <WorkLeft progress={progress}>
+              <span>We built</span>
+              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                &#x27;s app.
+              </div>
+            </WorkLeft>
+            <WorkRight progress={progress}>
+            <img
+                src='/assets/works/pinkpanda.png'
+                alt="Pink Panda"
+                className="w-1/2"
+              />
+            </WorkRight>
+          </div>
+        )}
+      ></Tile>
+       
     </TileContent>
   </TileWrapper>
 );

@@ -47,7 +47,11 @@ export const StreamlinedExperience = () => {
         <motion.p
           aria-hidden
           style={{ x: textX, y: "-50%" }}
-          className="whitepspace-nowrap min-w-screen absolute top-1/2 max-[540px]:left-[calc(-150vw+25rem)] max-[850px]:left-[calc(-100vw+25rem)] max-[410px]:text-[3rem]   max-[1410px]:left-[calc(-70vw+25rem)]  left-[calc(-50vw+25rem)] max-[750px]:text-[6rem] z-[11] max-[1110px]:text-[8rem] text-[20rem] text-transparent dark:[-webkit-text-stroke:1px_var(--color-heading)] [-webkit-text-stroke:1px_black] "
+          className="whitepspace-nowrap min-w-screen absolute top-1/2 max-[540px]:left-[calc(-150vw+25rem)] max-[850px]:left-[calc(-100vw+25rem)] max-[410px]:text-[3rem]   max-[1410px]:left-[calc(-70vw+25rem)]  left-[calc(-50vw+25rem)] max-[750px]:text-[6rem] z-[11] max-[1110px]:text-[8rem] text-[20rem] text-transparent dark:[-webkit-text-stroke:2.5px_var(--color-heading)] 
+          max-[1110px]:dark:[-webkit-text-stroke:1px_var(--color-heading)]
+          max-[1110px]:[-webkit-text-stroke:1px_black] 
+          [-webkit-text-stroke:2.5px_black] 
+          "
         >
           Crafting Digital Excellence&nbsp;
         </motion.p>
@@ -61,7 +65,7 @@ export const StreamlinedExperience = () => {
           }}
           className="absolute left-1/2 top-1/2 text-[8rem] max-[850px]:text-[5rem] max-[400px]:text-[1.5rem] max-[480px]:text-[3rem] leading-tight text-center dark:text-white text-black "
         >
-          Crafting Digital 
+          Crafting Digital
           <br />
           Excellence
         </motion.p>

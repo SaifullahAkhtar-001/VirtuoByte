@@ -41,7 +41,7 @@ export const WorkRight: React.FC<{
   progress: number;
   children: React.ReactNode;
 }> = ({ children, progress }) => {
-  let translateY = Math.max(-50, -(progress - 0.5) * 50);
+  let translateY = Math.max(-50, -(progress - 0.9) * 50);
   return (
     <div
       className="flex flex-1 lg:items-center justify-center h-screen"
@@ -49,7 +49,7 @@ export const WorkRight: React.FC<{
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <div className="w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0">
+      <div className="w-full flex items-center justify-center max-w-md pt-10 lg:pt-0 px-10 md:px-0">
         {children}
       </div>
     </div>
