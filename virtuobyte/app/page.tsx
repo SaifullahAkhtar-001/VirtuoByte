@@ -24,7 +24,7 @@ const page: React.FC = () => {
       </div>
       {/* <Works /> */}
     
-      {/* <Testimonials /> */}
+      <Testimonials />
     </>
   )
 }
