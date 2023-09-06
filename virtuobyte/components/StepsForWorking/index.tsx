@@ -18,12 +18,12 @@ const Index = () => {
   };
 
   return (
-    <div className="flex gap-8 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[2rem]">
-      <div className="flex flex-col gap-[1.5rem] flex-1">
+    <div className="flex gap-4 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[6rem]">
+      <div className="flex flex-col gap-[1.5rem] justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4   p-6 flex-1">
         <div className="text-[28px] font-[600]">
           The VirtuoByte Solution Journey in 5 Comprehensive Steps!
         </div>
-        <div className="text-[15px] word-break">
+        <div className="text-[16px] word-break">
           Embark on a seamless and structured journey with Virtuobyte as we
           guide your business to conquer web, software, and IT challenges. Our
           meticulously crafted five-step process is your compass to precision
@@ -31,30 +31,30 @@ const Index = () => {
           just met, but masterfully attended to.
         </div>
       </div>
-      <div className="flex flex-1 flex-col gap-[1.5rem] max-[1000px]:gap-[2.5rem] ">
+      <div className="flex flex-1 flex-col gap-[1.5rem] border dark:border-white border-black rounded-xl  max-[425px]:p-4  p-6 max-[1000px]:gap-[2.5rem] ">
         {StepsData &&
           StepsData.map((steps: Steps) => (
             <div className="group" key={steps.id}>
               <div
-                className={`border-b flex items-center justify-between font-[500] text-[20px] transition duration-300 ease-in-out  cursor-pointer dark:border-white border-black ${
-                  showDescriptions[steps.id]
-                    ? ""
-                    : ""
+                className={`border-b border-spacing-3 flex items-center justify-between font-[500] text-[20px] transition duration-300 ease-in-out  cursor-pointer dark:border-white border-black ${
+                  showDescriptions[steps.id] ? "" : ""
                 } `}
                 onClick={() => toggleDescription(steps.id)}
               >
                 {steps.title}
                 {showDescriptions[steps.id] ? (
                   <span>
-                  <BiUpArrowAlt  className='text-[22px]'/></span>
+                    <BiUpArrowAlt className="text-[22px]" />
+                  </span>
                 ) : (
                   <span>
-                  <BiDownArrowAlt className='text-[22px]'/></span>
+                    <BiDownArrowAlt className="text-[22px]" />
+                  </span>
                 )}
               </div>
               {showDescriptions[steps.id] && (
                 <div
-                  className={` pt-4 transition duration-300 ease-in-out word-break  ${
+                  className={` pt-4 transition duration-300 ease-in-out word-break text-[16px] ${
                     showDescriptions[steps.id] ? "" : ""
                   } `}
                 >

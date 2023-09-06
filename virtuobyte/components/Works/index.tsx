@@ -1,18 +1,17 @@
-'use client'
+"use client"
 import Image from "next/legacy/image";
 import React from "react";
 import { Tile, TileBackground, TileContent, TileWrapper } from "@/utils/tile";
 import {
   WorkBackground,
-  // WorkContainer,
   WorkLeft,
   WorkLink,
   WorkRight,
 } from "@/utils/works";
 
-import PinkPanda from '@/public/assets/works/pinkpanda.png'
 const Works = () => (
-  <TileWrapper numOfPages={3}>
+  <>
+  <TileWrapper numOfPages={1}>
     <div className="absolute h-full w-full">
       <WorkBackground />
     </div>
@@ -32,60 +31,20 @@ const Works = () => (
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
-              <img
-                src='/assets/works/pinkpanda.png'
+               <img
+                src='/assets/works/MacBook_Pro_16.png'
                 alt="Pink Panda"
-                className="w-1/2"
               />
             </WorkRight>
           </div>
         )}
       ></Tile>
-       <Tile
-        page={1}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
-            <WorkLeft progress={progress}>
-              <span>We built</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &#x27;s app.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-            <img
-                src='/assets/works/pinkpanda.png'
-                alt="Pink Panda"
-                className="w-1/2"
-              />
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
-        <Tile
-        page={2}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
-            <WorkLeft progress={progress}>
-              <span>We built</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &#x27;s app.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-            <img
-                src='/assets/works/pinkpanda.png'
-                alt="Pink Panda"
-                className="w-1/2"
-              />
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
+    
        
     </TileContent>
   </TileWrapper>
+  </>
+
 );
 
 export default Works;

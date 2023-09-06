@@ -10,7 +10,7 @@ import Review from "./Review";
 
 const Testimonials: React.FC = () => {
   return (
-    <Carousel className="bg-black text-white py-10 lg:py-20">
+    <Carousel className=" text-black dark:text-white py-10 ">
       <CarouselItem index={0}>
         <Review by="Axel (Showtime)">
           Margelo and Showtime both share the love for high-quality software,

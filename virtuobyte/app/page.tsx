@@ -6,20 +6,25 @@ import Skills from '@/components/Skills';
 import Works from '@/components/Works';
 import StepsForWorking from '@/components/StepsForWorking';
 import Testimonials from '@/components/Carousel/Testimonials';
-const page:React.FC = () => {
+import Team from '@/components/Team';
+import About from '@/components/About';
+const page: React.FC = () => {
   return (
     <>
-    <Hero/>
-    <ScrollToTop top={true}/>
-    <Skills/>
-    <div className="relative z-10 w-full overflow-x-clip">
-    <StreamlinedExperience/>
-    </div>
-    <div className='mb-[6rem]'>
-    <StepsForWorking/>
-    </div>
-    <Works/>
-    {/* <Testimonials/> */}
+      <Hero />
+      <ScrollToTop top={true} />
+      <Skills />
+      <About />
+      <Team />
+      <div className='mb-[6rem]'>
+        <StepsForWorking />
+      </div>
+      <div className="relative z-10 w-full overflow-x-clip">
+        {/* <StreamlinedExperience /> */}
+      </div>
+      {/* <Works /> */}
+    
+      {/* <Testimonials /> */}
     </>
   )
 }
