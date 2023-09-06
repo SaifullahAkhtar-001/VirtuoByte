@@ -20,8 +20,8 @@ export const StreamlinedExperience = () => {
   );
   const finalTextOpacity = useTransform(
     scrollYProgress,
-    [0.7, 0.71, 0.72, 0.8, 0.9],
-    [0, 0, 1, 1, 0]
+    [0.1, 0.5, 0.72, 0.8, 0.9],
+    [0, 0, 0, 1, 0]
   );
 
   const finalTextScale = useTransform(scrollYProgress, [0.8, 0.9], [1, 0.7]);
@@ -36,7 +36,7 @@ export const StreamlinedExperience = () => {
       ref={containerRef}
       className="mt-[50vh] flex h-[500vh] items-start justify-start"
     >
-      <div className="sticky top-1/2 left-1/2 min-h-[40rem] min-w-[40rem]  max-[410px]:min-h-[7rem] max-[410px]:min-w-[7rem] max-[590px]:min-h-[10rem] max-[590px]:min-w-[10rem] max-[750px]:min-h-[15rem] max-[750px]:min-w-[15rem]  max-[1110px]:min-h-[20rem] max-[1110px]:min-w-[20rem]  max-[1410px]:min-h-[30rem] max-[1410px]:min-w-[30rem] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap before:absolute before:inset-0 before:scale-[var(--scale)] max-[1410px]:before:border-[1.5rem] max-[1110px]:before:border-[1rem] max-[410px]:before:border-[0.5rem]  before:border-[2.5rem] before:border-[#000000] dark:before:border-[#ffffff] before:opacity-[var(--opacity-border)]">
+      <div className="sticky top-1/2 left-1/2 min-h-[40rem] min-w-[40rem]  max-[410px]:min-h-[7rem] max-[410px]:min-w-[7rem] max-[590px]:min-h-[10rem] max-[590px]:min-w-[10rem] max-[750px]:min-h-[17rem] max-[750px]:min-w-[17rem]  max-[1110px]:min-h-[20rem] max-[1110px]:min-w-[20rem]  max-[1410px]:min-h-[30rem] max-[1410px]:min-w-[30rem] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap before:absolute before:inset-0 before:scale-[var(--scale)] max-[1410px]:before:border-[1.5rem] max-[1110px]:before:border-[1rem] max-[590px]:before:border-[0.5rem]  before:border-[2.5rem] before:border-[#000000] dark:before:border-[#ffffff] before:opacity-[var(--opacity-border)]">
         <motion.p
           aria-hidden
           style={{ x: textX, y: "-50%" }}
@@ -63,7 +63,7 @@ export const StreamlinedExperience = () => {
             y: "-50%",
             x: "-50%",
           }}
-          className="absolute left-1/2 top-1/2 text-[8rem] max-[850px]:text-[5rem] max-[400px]:text-[1.5rem] max-[480px]:text-[3rem] leading-tight text-center dark:text-white text-black "
+          className="absolute left-1/2 top-1/2 text-[8rem] max-[850px]:text-[5rem] max-[400px]:text-[34px] max-[700px]:text-[60px] max-[545px]:text-[45px] max-[1150px]:text-[6rem] leading-tight text-center dark:text-white text-black "
         >
           Crafting Digital
           <br />
