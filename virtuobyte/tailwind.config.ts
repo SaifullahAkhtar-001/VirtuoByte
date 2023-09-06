@@ -23,6 +23,7 @@ const config: Config = {
         background: "var(--color-background)",
       },
     },
+ 
   },
   plugins: [],
 };
