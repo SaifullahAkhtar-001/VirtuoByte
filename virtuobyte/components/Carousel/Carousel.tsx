@@ -50,7 +50,7 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
         ref={viewportRef}
         className={`${styles.viewport} w-full overflow-hidden ${className}`}
       >
-        <div className={`${styles.container} flex`}>{children}</div>
+        <div className={`${styles.container} flex `}>{children}</div>
       </div>
     </CarouselContext.Provider>
   );

@@ -1,4 +1,3 @@
-'use client'
 import React, { useRef, useContext } from "react";
 import { ScrollContext } from "../utils/scroll-observer";
 

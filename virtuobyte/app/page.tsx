@@ -22,8 +22,7 @@ const page: React.FC = () => {
       <div className="relative z-10 w-full overflow-x-clip">
         <StreamlinedExperience />
       </div>
-      {/* <Works /> */}
-    
+      <Works />
       <Testimonials />
     </>
   )
