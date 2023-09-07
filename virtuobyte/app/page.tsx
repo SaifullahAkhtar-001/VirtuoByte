@@ -5,10 +5,10 @@ import { StreamlinedExperience } from '@/components/Experince'
 import Skills from '@/components/Skills';
 import Works from '@/components/Works';
 import StepsForWorking from '@/components/StepsForWorking';
-import Testimonials from '@/components/Carousel/Testimonials';
 import Team from '@/components/Team';
 import About from '@/components/About';
-import Form from '@/components/Form'
+import Testimonials from '@/components/Testimonials'
+import Contact from '@/components/Contact'
 const page: React.FC = () => {
   return (
     <>
@@ -23,9 +23,10 @@ const page: React.FC = () => {
       <div className="relative z-10 w-full overflow-x-clip">
         <StreamlinedExperience />
       </div>
-      <Works />
-      <Testimonials />
-      <Form/>
+      {/* <Works /> */}
+      <Testimonials/>
+      <Contact/>
+   
     </>
   )
 }

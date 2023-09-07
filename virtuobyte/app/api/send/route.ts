@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions: Mail.Options = {
       from: process.env.NEXT_PUBLIC_GMAIL, // Replace 'EMAIL_USERNAME' with the correct environment variable name for your email username
-      to: ["contact.muhammadmubashir@gmail.com","mubashir.munir2020@gmail.com"], // Replace 'EMAIL_USERNAME' with the correct environment variable name for your email username
+      to: ["contact.muhammadmubashir@gmail.com","saifullah.akhtar13@gmail.com"], // Replace 'EMAIL_USERNAME' with the correct environment variable name for your email username
       // cc: email, (uncomment this line if you want to send a copy to the sender)
       subject: `Message from ${name} (${email})`,
       text: message,
