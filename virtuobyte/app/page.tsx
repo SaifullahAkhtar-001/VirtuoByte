@@ -8,6 +8,7 @@ import StepsForWorking from '@/components/StepsForWorking';
 import Testimonials from '@/components/Carousel/Testimonials';
 import Team from '@/components/Team';
 import About from '@/components/About';
+import Form from '@/components/Form'
 const page: React.FC = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const page: React.FC = () => {
       </div>
       <Works />
       <Testimonials />
+      <Form/>
     </>
   )
 }
