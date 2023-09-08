@@ -18,7 +18,7 @@ const CarouselItem: React.FC<Props> = ({ children, index }) => {
   }, [emblaApi, index]);
   return (
     <div
-      className={`${styles.slide} relative ${isActive ? "active" : ""}`}
+      className={`${styles.slide} relative ${isActive ? "active" : "max-[550px]:opacity-0 min-[550px]:opacity-[0.4]"}`}
       onClick={handleClick}
     >
       {children}

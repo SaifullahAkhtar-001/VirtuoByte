@@ -48,7 +48,7 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
     <CarouselContext.Provider value={{ embla: emblaApi, selectedIndex }}>
       <div
         ref={viewportRef}
-        className={`${styles.viewport} w-full overflow-hidden ${className}`}
+        className={`${styles.viewport} w-full  overflow-hidden ${className}`}
       >
         <div className={`${styles.container} flex `}>{children}</div>
       </div>

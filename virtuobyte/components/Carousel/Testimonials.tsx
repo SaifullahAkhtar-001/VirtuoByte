@@ -5,7 +5,7 @@ import Review from "./Review";
 
 const Testimonials: React.FC = () => {
   return (
-    <Carousel className="text-black  dark:text-white py-10">
+    <Carousel className="text-black dark:text-white py-10">
       <CarouselItem index={0}>
         <Review by="Ali (AARASTA)">
           Working with VirtuoByte on our ecommerce site has been an exceptional experience. They delivered high-quality software, shared our passion for creating valuable solutions, and consistently strived for excellence. I would wholeheartedly recommend VirtuoByte and their team; it&apos;s a 10/10 collaboration!
