@@ -12,6 +12,7 @@ import {
 
 import PinkPanda from '@/public/assets/works/pinkpanda.png'
 const Works = () => (
+  <div className="scroll-mt-[100px]" id="projects">
   <TileWrapper numOfPages={3}>
     <div className="absolute h-full w-full">
       <WorkBackground />
@@ -86,6 +87,7 @@ const Works = () => (
        
     </TileContent>
   </TileWrapper>
+  </div>
 );
 
 export default Works;

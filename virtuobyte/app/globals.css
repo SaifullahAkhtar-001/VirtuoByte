@@ -30,19 +30,29 @@
 *{
   scroll-behavior: smooth;
 }
+/* Add this CSS to your stylesheets */
+/* Add this CSS to your stylesheets */
 #menu {
-  align-items: center;
-  display: flex;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  z-index: 50; /* Adjust as needed */
+  display: flex; /* Add this to make menu items take full height */
+  flex-direction: column; /* Add this to stack menu items vertically */
+  overflow: hidden;
 }
 
 #menu-items {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  flex-grow: 1; /* Add this to make menu items take remaining height */
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   z-index: 2;
 }
+
 
 #menu[data-active-index="0"] > #menu-background-pattern {
   background-position: 0% -25%;
@@ -186,7 +196,16 @@
   width: 100%;
   z-index: 1;
 }
+.hide-nav {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
 
+/* Show the navigation bar */
+.show-nav {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
 @media screen and (max-width: 500px) {
   .menu-item {
     font-size: 40px;
@@ -196,5 +215,17 @@
   }
 }
 
+
+@media screen and (max-width: 400px) {
+  .menu-item {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #menu-items {
+    padding: 2rem;
+  }
+}
 
 

@@ -3,13 +3,13 @@ import React from 'react';
 const index = () => {
     return (
         <>
-            <div id='about' className='flex gap-4 max-[1000px]:flex-col justify-between my-4'>
+            <div id='about' className='flex scroll-mt-[100px] gap-4 max-[1000px]:flex-col justify-between my-4'>
                 <div className='flex flex-1 flex-col gap-5 justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
                     <div className='text-[28px] max-[425px]:text-[25px] font-[500] break-words'>What We Do?</div>
                     <div className='break-words text-[16px]'>
                         At Virtuo Byte, we specialize in crafting tailored web services and solutions to enhance businesses&apos; online presence. Our dedicated team of experts leverages cutting-edge technology and industry best practices to ensure your digital success. Whether you&apos;re a startup looking to establish a strong online presence or an established corporation aiming to streamline operations, we have the knowledge and experience to create effective, future-proof solutions.
                     </div>
-                </div>
+                </div>  
               
                 <div className='flex flex-1 flex-col gap-5 border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
                     <div className='text-[28px] max-[425px]:text-[25px] font-[500] break-words'>Why Choose Us?</div>

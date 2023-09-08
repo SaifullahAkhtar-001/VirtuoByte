@@ -16,7 +16,7 @@ const Index: React.FC = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0])
 
   return (
-    <motion.div style={{opacity}}  id='top' ref={targetRef} className='flex items-center   max-[1450px]:mt-[5rem]  gap-4 justify-between min-h-screen max-[1450px]:flex-col '>
+    <motion.div style={{opacity}}  id='top' ref={targetRef} className='flex items-center   max-[1450px]:mt-[5rem]  gap-8 justify-between min-h-screen max-[1450px]:flex-col '>
       <div className='flex flex-col gap-[4rem] max-[450px]:gap-[2rem]  flex-1 justify-between '>
         <div className='flex flex-col  gap-4'>
           <div className='text-[45px] max-[550px]:text-[28px] max-[386px]:text-[25px]  font-[500] break-words '>
@@ -30,7 +30,6 @@ const Index: React.FC = () => {
           <button className='underline underline-offset-4 flex items-center gap-1 '>Contact Us <FiArrowUpRight size={17} /></button>
         </div>
       </div>
-      
       <Image src={HeroSVG} height={0} width={0} alt='Hero Image'  />
      
     </motion.div>

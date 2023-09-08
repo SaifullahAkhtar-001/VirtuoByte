@@ -3,7 +3,7 @@ import React from 'react'
 
 const index = () => {
     return (
-        <div className='flex items-center flex-col my-[6rem] gap-8'>
+        <div id='team' className='flex items-center scroll-mt-[110px] flex-col my-[6rem] gap-8'>
             <div className='text-[34px] my-[1rem] text-center font-[500] break-words' >Meet Our Highly Skilled Team</div>
             <div className='flex items-center justify-center gap-5 w-full flex-wrap'>
                 <div className='flex items-center flex-col'>
