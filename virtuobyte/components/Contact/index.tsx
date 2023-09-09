@@ -3,7 +3,7 @@ import Form from '@/components/Form';
 
 const index: React.FC = () => {
     return (
-        <div className='flex flex-col items-center gap-8 '>
+        <div id='contact' className='flex flex-col scoll-mt-[100px] items-center gap-8 '>
             <div className='text-[34px] my-[1rem] text-center font-[500] break-words'>
                 Have Questions? Contact Us
             </div>

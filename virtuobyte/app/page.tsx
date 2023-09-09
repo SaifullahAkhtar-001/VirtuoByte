@@ -9,6 +9,7 @@ import Team from '@/components/Team';
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
+import Services from '@/components/Services'
 const page: React.FC = () => {
   return (
     <>
@@ -17,16 +18,17 @@ const page: React.FC = () => {
       <Skills />
       <About />
       <Team />
-      <div className='mb-[6rem]'>
-        <StepsForWorking />
-      </div>
       <div className="relative z-10 w-full overflow-x-clip">
         <StreamlinedExperience />
       </div>
+      <Services />
+      <div className='mb-[3rem]'>
+        <StepsForWorking />
+      </div>
       {/* <Works /> */}
-      <Testimonials/>
-      <Contact/>
-   
+      <Testimonials />
+      <Contact />
+
     </>
   )
 }

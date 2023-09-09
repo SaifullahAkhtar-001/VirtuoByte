@@ -27,7 +27,7 @@ const Index: React.FC = () => {
 
         <div className='flex max-[1200px]:flex-col min-[12001px]:items-center gap-8'>
           <Link href={'#about'} className='underline underline-offset-4 flex items-center gap-1 '>Know More About Us <FiArrowUpRight size={17} /></Link>
-          <button className='underline underline-offset-4 flex items-center gap-1 '>Contact Us <FiArrowUpRight size={17} /></button>
+          <Link href={'#contact'} className='underline underline-offset-4 flex items-center gap-1 '>Contact Us <FiArrowUpRight size={17} /></Link>
         </div>
       </div>
       <Image src={HeroSVG} height={0} width={0} alt='Hero Image'  />
