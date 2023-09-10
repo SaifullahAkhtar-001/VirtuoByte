@@ -10,12 +10,12 @@ const index = () => {
       <div id='contact' className='flex scroll-mt-[100px] flex-wrap gap-4 justify-center flex-col my-4'>
         <div className='flex flex-1 flex-col gap-5 justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
           <div className='text-[28px] max-[425px]:text-[25px] font-[500] break-words'>Creative Web Design</div>
-          <div className='break-words text-[16px]'>Elevate your online presence with our creative web design services. We blend aesthetics with functionality to craft visually stunning websites that leave a lasting impression. Whether you're starting from scratch or looking to revamp your existing site, our designers are ready to turn your ideas into reality.</div>
+          <div className='break-words text-[16px]'>Elevate your online presence with our creative web design services. We blend aesthetics with functionality to craft visually stunning websites that leave a lasting impression. Whether you&apos;re starting from scratch or looking to revamp your existing site, our designers are ready to turn your ideas into reality.</div>
         </div>
         <div className='flex flex-1 flex-col gap-8 justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
           <div className='text-[28px] max-[425px]:text-[25px] font-[500] break-words'>Web App Development</div>
           <div className='break-words text-[16px]'>
-            Stay ahead of the competition with our web app development expertise. We specialize in building robust, scalable, and feature-rich web applications that empower your business. From e-commerce platforms to custom enterprise solutions, we've got your web development needs covered.
+            Stay ahead of the competition with our web app development expertise. We specialize in building robust, scalable, and feature-rich web applications that empower your business. From e-commerce platforms to custom enterprise solutions, we&apos;ve got your web development needs covered.
           </div>
         </div>
         <div className='flex flex-1 flex-col gap-8 justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
@@ -24,7 +24,7 @@ const index = () => {
         </div>
         <div className='flex flex-1 flex-col gap-8 justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4 p-6'>
           <div className='text-[28px] max-[425px]:text-[25px] font-[500] break-words'>Custom Solutions</div>
-          <div className='break-words text-[16px]'>Every business is unique, and we understand that. If your needs go beyond our standard services, we're here to create custom solutions tailored to your specific requirements. Let's collaborate to build something truly exceptional.</div>
+          <div className='break-words text-[16px]'>Every business is unique, and we understand that. If your needs go beyond our standard services, we&apos;re here to create custom solutions tailored to your specific requirements. Let&apos;s collaborate to build something truly exceptional.</div>
         </div>
       </div>
     </div>
