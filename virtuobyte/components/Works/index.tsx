@@ -10,84 +10,74 @@ import {
   WorkRight,
 } from "@/utils/works";
 
-import PinkPanda from '@/public/assets/works/pinkpanda.png'
+import AARASTA from '@/public/assets/works/MacBook_Pro_16.png'
+
 const Works = () => (
-  <div className="scroll-mt-[100px]" id="projects">
-  <TileWrapper numOfPages={3}>
-    <div className="absolute h-full w-full">
-      <WorkBackground />
-    </div>
-    <TileBackground>
-      <WorkBackground />
-    </TileBackground>
-    <TileContent>
-      <Tile
-        page={0}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
-            <WorkLeft progress={progress}>
-              <span>We built</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &#x27;s app.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-              <img
-                src='/assets/works/pinkpanda.png'
-                alt="Pink Panda"
-                className="w-1/2"
-              />
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
-       <Tile
-        page={1}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
-            <WorkLeft progress={progress}>
-              <span>We built</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &#x27;s app.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-            <img
-                src='/assets/works/pinkpanda.png'
-                alt="Pink Panda"
-                className="w-1/2"
-              />
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
+  <>
+    <TileWrapper numOfPages={2}>
+      <div className="absolute h-full w-full">
+        <WorkBackground />
+      </div>
+      <TileBackground>
+        <WorkBackground />
+      </TileBackground>
+      <TileContent>
         <Tile
-        page={2}
-        renderContent={({ progress }) => (
-          <div className="grid grid-cols-1 lg:grid-cols-2  w-full h-full">
-            <WorkLeft progress={progress}>
-              <span>We built</span>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &#x27;s app.
-              </div>
-            </WorkLeft>
-            <WorkRight progress={progress}>
-            <img
-                src='/assets/works/pinkpanda.png'
-                alt="Pink Panda"
-                className="w-1/2"
-              />
-            </WorkRight>
-          </div>
-        )}
-      ></Tile>
-       
-    </TileContent>
-  </TileWrapper>
-  </div>
+          page={0}
+          renderContent={({ progress }) => (
+            <div className="flex h-full items-center flex-col  w-full ">
+              <WorkLeft progress={progress}>
+                <span>We built</span>
+                <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                  <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                  &#x27;s app.
+                </div>
+              </WorkLeft>
+              <WorkRight progress={progress}>
+                <Image
+                  src={AARASTA}
+                  alt="Pink Panda"
+                  width={0} // Set an appropriate width
+                  height={0} // Set an appropriate height
+                />
+              </WorkRight>
+            </div>
+          )}
+        ></Tile>
+        <Image
+          src={AARASTA}
+          alt="Pink Panda"
+          width={0} // Set an appropriate width
+          height={0} // Set an appropriate height
+          className="hidden z-[-200] opacity-0"
+        />
+         <Tile
+          page={1}
+          renderContent={({ progress }) => (
+            <div className="flex h-full items-center flex-col  w-full ">
+              <WorkLeft progress={progress}>
+                <span>We built</span>
+                <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                  <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                  &#x27;s app.
+                </div>
+              </WorkLeft>
+              <WorkRight progress={progress}>
+                <Image
+                  src={AARASTA}
+                  alt="Pink Panda"
+                  width={0} // Set an appropriate width
+                  height={0} // Set an appropriate height
+                />
+              </WorkRight>
+            </div>
+          )}
+        ></Tile>
+
+      </TileContent>
+    </TileWrapper>
+
+  </>
 );
 
 export default Works;

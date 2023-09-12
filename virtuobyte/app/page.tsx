@@ -25,7 +25,7 @@ const page: React.FC = () => {
       <div className='mb-[3rem]'>
         <StepsForWorking />
       </div>
-      {/* <Works /> */}
+      <Works />
       <Testimonials />
       <Contact />
 

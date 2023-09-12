@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`dark:bg-black bg-white max-[1000px]:mx-8 mx-16 my-4 ${inter.className}`}>
         <Providers>
+        <Toaster/>
           <ScrollObserver>
-            <Toaster/>
             <Header />
             {children}
           </ScrollObserver>
