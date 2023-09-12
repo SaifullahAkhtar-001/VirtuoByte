@@ -42,7 +42,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     <TileContext.Provider value={{ numOfPages, currentPage }}>
       <div
         ref={refContainer}
-        className="relative    dark:text-white text-black"
+        className="relative "
         style={{
           height: numOfPages * 100 + "vh",
         }}
@@ -57,11 +57,11 @@ type Child = {
 };
 
 export const TileBackground: React.FC<Child> = ({ children }) => (
-  <div className="absolute h-full w-full">{children}</div>
+  <div className="absolute h-full w-full ">{children}</div>
 );
 
 export const TileContent: React.FC<Child> = ({ children }) => (
-  <div className="sticky top-0  ">{children}</div>
+  <div className="sticky top-0 overflow-clip  ">{children}</div>
 );
 
 interface Props {

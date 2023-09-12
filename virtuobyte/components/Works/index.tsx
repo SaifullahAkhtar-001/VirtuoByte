@@ -19,49 +19,50 @@ const Works = () => (
         <Tile
           page={0}
           renderContent={({ progress }) => (
-            <div className="flex h-full items-center flex-col  w-full ">
+            <div className="flex h-full items-center flex-col   w-full ">
               <WorkLeft progress={progress}>
                 <span>We built</span>
                 <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                  <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                  <WorkLink href="https://pinkpanda.io/">AARASTA</WorkLink>
                   &#x27;s app.
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <Image
-                  src={AARASTA}
-                 
-                  alt="Pink Panda"
-                  className="w-[800px]"
-                />
+                <div className="max-w-[1100px]">
+                  <img
+                    src='/assets/works/MacBook_Pro_16.png'
+                    alt="Pink Panda"
+                  />
+                </div>
               </WorkRight>
             </div>
           )}
         ></Tile>
-        <Image
-          src={AARASTA}
-          alt="Pink Panda"
-        
-          layout="responsive"
-          className="hidden z-[-200] opacity-0"
-        />
-         <Tile
+        <div className="max-w-[1100px]">
+          <img
+            src='/assets/works/MacBook_Pro_16.png'
+            alt="Pink Panda"
+            className="opacity-0"
+          />
+        </div>
+        <Tile
           page={1}
           renderContent={({ progress }) => (
-            <div className="flex h-full items-center flex-col  w-full ">
+            <div className="flex items-center flex-col  w-full ">
               <WorkLeft progress={progress}>
                 <span>We built</span>
                 <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                  <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
+                  <WorkLink href="https://pinkpanda.io/">AARASTA</WorkLink>
                   &#x27;s app.
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <Image
-                  src={AARASTA}
-                  alt="Pink Panda"
-                  className="w-[200px]"
-                />
+                <div className="max-w-[1100px]">
+                  <img
+                    src='/assets/works/MacBook_Pro_16.png'
+                    alt="Pink Panda"
+                  />
+                </div>
               </WorkRight>
             </div>
           )}
