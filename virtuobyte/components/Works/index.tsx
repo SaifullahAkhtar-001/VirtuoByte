@@ -15,12 +15,6 @@ import AARASTA from '@/public/assets/works/MacBook_Pro_16.png'
 const Works = () => (
   <>
     <TileWrapper numOfPages={2}>
-      <div className="absolute h-full w-full">
-        <WorkBackground />
-      </div>
-      <TileBackground>
-        <WorkBackground />
-      </TileBackground>
       <TileContent>
         <Tile
           page={0}
@@ -36,9 +30,9 @@ const Works = () => (
               <WorkRight progress={progress}>
                 <Image
                   src={AARASTA}
+                 
                   alt="Pink Panda"
-                  width={0} // Set an appropriate width
-                  height={0} // Set an appropriate height
+                  className="w-[800px]"
                 />
               </WorkRight>
             </div>
@@ -47,8 +41,8 @@ const Works = () => (
         <Image
           src={AARASTA}
           alt="Pink Panda"
-          width={0} // Set an appropriate width
-          height={0} // Set an appropriate height
+        
+          layout="responsive"
           className="hidden z-[-200] opacity-0"
         />
          <Tile
@@ -66,8 +60,7 @@ const Works = () => (
                 <Image
                   src={AARASTA}
                   alt="Pink Panda"
-                  width={0} // Set an appropriate width
-                  height={0} // Set an appropriate height
+                  className="w-[200px]"
                 />
               </WorkRight>
             </div>

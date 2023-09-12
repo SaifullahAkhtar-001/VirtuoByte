@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import ScrollToTop from '../components/ScrollTo'
 import { StreamlinedExperience } from '@/components/Experince'
 import Skills from '@/components/Skills';
-import Works from '@/components/Works';
+import Projects from '@/components/Projects';
 import StepsForWorking from '@/components/StepsForWorking';
 import Team from '@/components/Team';
 import About from '@/components/About';
@@ -25,7 +25,7 @@ const page: React.FC = () => {
       <div className='mb-[3rem]'>
         <StepsForWorking />
       </div>
-      <Works />
+      <Projects/>
       <Testimonials />
       <Contact />
 

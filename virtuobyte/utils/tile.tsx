@@ -42,7 +42,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     <TileContext.Provider value={{ numOfPages, currentPage }}>
       <div
         ref={refContainer}
-        className="relative bg-black text-white"
+        className="relative    dark:text-white text-black"
         style={{
           height: numOfPages * 100 + "vh",
         }}
@@ -61,7 +61,7 @@ export const TileBackground: React.FC<Child> = ({ children }) => (
 );
 
 export const TileContent: React.FC<Child> = ({ children }) => (
-  <div className="sticky top-0">{children}</div>
+  <div className="sticky top-0  ">{children}</div>
 );
 
 interface Props {
