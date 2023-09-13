@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description }) => {
   return (
-    <div className='flex flex-col gap-8 flex-1 h-[200px] border max-[650px]:min-w-[250px] min-w-[500px]  justify-between dark:border-white border-black rounded-xl p-6'>
+    <div className='flex flex-col gap-8 flex-1 border max-[650px]:min-w-[250px] min-w-[500px]  justify-between dark:border-white border-black rounded-xl p-6'>
 
 
       <div className='text-[28px] font-[500] break-words'>{title}</div>
