@@ -5,6 +5,7 @@ import WebApp from '@/public/Software engineer-amico.svg';
 import UIUX from '@/public/Static website-cuate.svg';
 import CUSTOMSOL from '@/public/Starting a business project-rafiki.svg'
 import ServiceCard from '../ServiceCard';
+import WebDevelop from '@/public/assets/web-development-svgrepo-com.svg'
 const index = () => {
   return (
     <div id='services' className='flex items-center scroll-mt-[80px]  flex-col my-[6rem] gap-8'>

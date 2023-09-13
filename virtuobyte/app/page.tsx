@@ -10,6 +10,7 @@ import About from '@/components/About';
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Services from '@/components/Services'
+import Stack from '@/components/Stack'
 const page: React.FC = () => {
   return (
     <>
@@ -25,7 +26,8 @@ const page: React.FC = () => {
       <div className='mb-[3rem]'>
         <StepsForWorking />
       </div>
-      <Projects/>
+      <Projects />
+      <Stack />
       <Testimonials />
       <Contact />
 
