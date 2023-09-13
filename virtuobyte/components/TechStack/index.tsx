@@ -1,27 +1,33 @@
-'use client'
-import React, { useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from 'framer-motion';
-import { wrap } from '@motionone/utils';
-
-
+"use client";
+import React, { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useMotionValue,
+  useVelocity,
+  useAnimationFrame,
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
   children: any;
   baseVelocity: number;
 }
 
-function ParallaxText({ children, baseVelocity = 20 }: ParallaxProps) {
+function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
-    stiffness: 800
+    stiffness: 300,
   });
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-    clamp: false
+    clamp: false,
   });
-  const x = useTransform(baseX, (v) => `${wrap(-20, -47, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(0, -25, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -44,14 +50,23 @@ function ParallaxText({ children, baseVelocity = 20 }: ParallaxProps) {
 
   return (
     <>
-      <div className='overflow-hidden'>
-        <motion.div className="flex items-center gap-12 " style={{ x }}>
-          <span className='flex items-center justify-between gap-12 text-[40px]'>{children} </span>
-          <span className='flex items-center justify-between gap-12 text-[40px]'>{children} </span>
-          <span className='flex items-center justify-between gap-12 text-[40px]'>{children} </span>
-          <span className='flex items-center justify-between gap-12 text-[40px]'>{children} </span>
-          <span className='flex items-center justify-between gap-12 text-[40px]'>{children} </span>
-
+      <div className="overflow-hidden">
+        <motion.div
+          className="flex items-center max-[560px]:gap-8 gap-12 text-[80px] max-[560px]:text-[45px] max-[920px]:text-[55px]"
+          style={{ x }}
+        >
+          <span className="flex items-center justify-between gap-12 max-[560px]:gap-8 ">
+            {children}{" "}
+          </span>
+          <span className="flex items-center justify-between gap-12 max-[560px]:gap-8 ">
+            {children}{" "}
+          </span>
+          <span className="flex items-center justify-between gap-12 max-[560px]:gap-8 ">
+            {children}{" "}
+          </span>
+          <span className="flex items-center justify-between gap-12 max-[560px]:gap-8 ">
+            {children}{" "}
+          </span>
         </motion.div>
       </div>
     </>
