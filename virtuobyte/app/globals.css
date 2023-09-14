@@ -12,6 +12,19 @@
   }
 }
 
+.glass_light{/* From https://css.glass */
+
+  backdrop-filter: blur(1px);
+
+}
+  .glass_dark{
+
+
+
+backdrop-filter: blur(7.9px);
+
+  }
+
 
 .parallax {
   overflow: hidden;

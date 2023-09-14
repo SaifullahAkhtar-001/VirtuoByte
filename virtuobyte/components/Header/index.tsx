@@ -45,11 +45,11 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div
-        className={`flex items-center sticky top-0 py-4 z-[10000]  justify-between ${
-          menu ? "" : "dark:bg-black bg-white"
-        } ${show}`}
-      >
+     <div
+  className={`flex items-center sticky inset-x-0 top-0 py-4 z-50 justify-between ${
+    menu ? "" : "dark:glass_dark glass_light"
+  } ${show}`}
+>
         <div
           className={`z-[50] text-[25px] max-[600px]:text-[20px] font-[500] ${
             menu && "opacity-0"
