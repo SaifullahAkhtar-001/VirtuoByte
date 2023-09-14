@@ -1,12 +1,11 @@
 "use client";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ThemeToggler from "./ThemeToggle";
 import menuData from "./menuData";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useTheme } from "next-themes";
-import { VscChromeClose } from "react-icons/vsc";
-
+import { VscChromeClose } from "react-icons/vsc"; 
 import { Menu } from "@/types/menu";
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(false);
@@ -47,11 +46,17 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div
-        className={`flex items-center sticky top-8 z-[10000]  justify-between ${show}`}
+        className={`flex items-center sticky top-0 py-4 z-[10000]  justify-between ${
+          menu ? "" : "dark:bg-black bg-white"
+        } ${show}`}
       >
-        <div className={`z-[50] text-[25px] max-[600px]:text-[20px] font-[500] ${
-          menu && "opacity-0"
-        }`}>VirtuoByte</div>
+        <div
+          className={`z-[50] text-[25px] max-[600px]:text-[20px] font-[500] ${
+            menu && "opacity-0"
+          }`}
+        >
+          VirtuoByte
+        </div>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">
             {menu ? (
@@ -71,8 +76,11 @@ const Navbar: React.FC = () => {
                 }}
               />
             )}
+           
 
+           
             <ThemeToggler />
+           
           </div>
         </div>
       </div>
@@ -89,7 +97,7 @@ const Navbar: React.FC = () => {
                 onMouseOver={() => {
                   setActiveIndex(data.id);
                 }}
-                onClick={()=>(setMenu(!menu))}
+                onClick={() => setMenu(!menu)}
               >
                 {data.title}
               </Link>
@@ -101,13 +109,11 @@ const Navbar: React.FC = () => {
                 ? "menu-background-pattern-dark"
                 : "menu-background-pattern"
             }
-            className={
-              theme === "dark"
-                ? "bg-black"
-                : "bg-white"
-            }
+            className={theme === "dark" ? "bg-black" : "bg-white"}
             style={{
-              backgroundPosition: `0% -${activeIndex ? (activeIndex + 1) * 25 : 0}%`,
+              backgroundPosition: `0% -${
+                activeIndex ? (activeIndex + 1) * 25 : 0
+              }%`,
             }}
           ></div>
         </div>
