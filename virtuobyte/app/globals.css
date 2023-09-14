@@ -14,14 +14,14 @@
 
 .glass_light{/* From https://css.glass */
 
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
 
 }
   .glass_dark{
 
 
 
-backdrop-filter: blur(7.9px);
+backdrop-filter: blur(2px);
 
   }
 

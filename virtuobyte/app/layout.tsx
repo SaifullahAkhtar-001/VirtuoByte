@@ -5,7 +5,7 @@ import { Providers } from "./providers";
 import { Montserrat } from "next/font/google";
 import ScrollObserver from "@/utils/scroll-observer";
 import { Toaster } from "react-hot-toast";
-
+import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: "VirtuoByte",
   description: "Elevating Online Presence with Premier Web Services and Solutions.",
@@ -21,12 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`dark:bg-black bg-white max-[1000px]:mx-8 mx-16 my-4 ${inter.className}`}>
+      <body className={`dark:bg-black transition duration-300  bg-white max-[1000px]:mx-8 mx-16 my-4 ${inter.className}`}>
         <Providers>
         <Toaster/>
           <ScrollObserver>
             <Header />
             {children}
+            <Footer/>
           </ScrollObserver>
         </Providers>
       </body>

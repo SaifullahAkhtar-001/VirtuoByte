@@ -2,9 +2,9 @@ import React from 'react'
 
 const index = () => {
   return (
-    <div>
-        
-    </div>
+   
+      <div className=' py-4 text-center'>Copyright © 2023 VirtuoByte. All rights reserved.</div>
+  
   )
 }
 
