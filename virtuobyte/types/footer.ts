@@ -1,4 +1,4 @@
-export type Menu = {
+export type Footer = {
     id: number;
     title: string;
   };

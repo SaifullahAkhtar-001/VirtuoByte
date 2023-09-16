@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
     <>
      <div
   className={`flex items-center sticky inset-x-0 top-0   py-4 z-[1000] justify-between ${
-    menu ? "" : "dark:bg-black bg-white"
+    menu ? "" : "dark:bg-black border-b dark:border-white border-black bg-white"
   } ${show}`}
 >
         <div
