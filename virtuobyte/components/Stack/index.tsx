@@ -15,6 +15,8 @@ import { BiLogoFlutter } from 'react-icons/bi';
 import { SiDart } from 'react-icons/si';
 import { LiaFigma } from 'react-icons/lia';
 import { TbBrandWebflow } from 'react-icons/tb';
+import { BiLogoCss3 } from 'react-icons/bi';
+import { AiFillHtml5 } from 'react-icons/ai';
 import TechStack from '@/components/TechStack';
 
 const index = () => {
@@ -29,6 +31,8 @@ const index = () => {
                     <FaReact />
                     <TbBrandNextjs />
                     <SiTailwindcss />
+                    <BiLogoCss3/>,
+                    <AiFillHtml5/>
                     <DiSass />
                     <BiLogoJavascript />
                     <SiTypescript />
@@ -47,6 +51,8 @@ const index = () => {
                     <FaReact />
                     <TbBrandNextjs />
                     <SiTailwindcss />
+                    <BiLogoCss3/>,
+                    <AiFillHtml5/>
                     <DiSass />
                     <BiLogoJavascript />
                     <SiTypescript />

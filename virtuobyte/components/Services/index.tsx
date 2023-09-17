@@ -1,12 +1,69 @@
-import Image from 'next/image';
 import React from 'react';
-import CreativeWeb from '@/public/Opensource-cuate.svg';
-import WebApp from '@/public/Software engineer-amico.svg';
-import UIUX from '@/public/Static website-cuate.svg';
-import CUSTOMSOL from '@/public/Starting a business project-rafiki.svg'
 import ServiceCard from '../ServiceCard';
-import WebDevelop from '@/public/assets/web-development-svgrepo-com.svg'
+import { FaReact } from 'react-icons/fa';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { SiTailwindcss } from 'react-icons/si';
+import { DiSass } from 'react-icons/di';
+import { BiLogoJavascript } from 'react-icons/bi';
+import { SiTypescript } from 'react-icons/si';
+import { SiNodedotjs } from 'react-icons/si';
+import { SiExpress } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
+import { FaPhp } from 'react-icons/fa';
+import { FaLaravel } from 'react-icons/fa';
+import { BsWordpress } from 'react-icons/bs';
+import { BiLogoCss3 } from 'react-icons/bi';
+import { AiFillHtml5,AiOutlineSolution } from 'react-icons/ai';
+import { BiLogoFlutter } from 'react-icons/bi';
+import { SiDart } from 'react-icons/si';
+import { LiaFigma } from 'react-icons/lia';
+import { TbBrandWebflow } from 'react-icons/tb';
+
 const index = () => {
+  const Full_Stack = [
+    <TbBrandNextjs />,
+    <FaReact />,
+    <FaLaravel />,
+    <SiNodedotjs />,
+    <SiExpress />,
+    <SiMongodb />,
+    <SiTypescript />,
+    <SiTailwindcss />,
+    <DiSass />
+  ];
+
+  const Front_End = [
+    <TbBrandNextjs />,
+    <FaReact />,
+    <SiTypescript />,
+    <BiLogoJavascript />,
+    <SiTailwindcss />,
+    <DiSass />
+  ];
+
+  const Back_End = [
+    <FaLaravel />,
+    <SiNodedotjs />,
+    <SiExpress />,
+    <SiMongodb />,
+    <FaPhp />,
+    <SiTypescript />,
+    <BiLogoJavascript />
+  ];
+  const WebFlow = [
+    <TbBrandWebflow />,
+    <BiLogoCss3 />,
+    <AiFillHtml5 />
+  ];
+  const WordPress = [
+    <BsWordpress />,
+    <FaPhp />,
+    <BiLogoCss3 />,
+    <AiFillHtml5 />
+  ];
+  const Custom_Solutions=[
+    <AiOutlineSolution/>
+  ];
   return (
     <div id='services' className='flex items-center scroll-mt-[80px]  flex-col my-[6rem] gap-8'>
       <div className='flex flex-col items-center my-8 '>
@@ -15,37 +72,37 @@ const index = () => {
       </div>
       <div className='flex scroll-mt-[100px] flex-wrap gap-4   my-4'>
         <ServiceCard
-          image={CreativeWeb}
+          icons={Full_Stack}
           title='Full-Stack Web Development'
-          description="Elevate your online presence with our full-stack web development services. Our creative web designs are crafted to leave a lasting impact, whether you&apos;re launching a new website or giving your current one a fresh update."
+          description="Elevate your online presence with our full-stack web development services. Our creative web designs are crafted to leave a lasting impact, whether you&apos;sre launching a new website or giving your current one a fresh update."
         />
         <ServiceCard
-          image={CreativeWeb}
+          icons={Front_End}
           title='Front-End Development'
           description="At VirtuoByte, we specialize in front-end development that transforms your online image. Our creative web designs are engineered to make a powerful impression, whether you&apos;re starting from scratch or revitalizing an existing website."
         />
         <ServiceCard
-          image={CreativeWeb}
+          icons={Back_End}
           title='Back-End Development'
           description="Our back-end development expertise is your key to enhancing your online presence. Through creative web design, we create websites that leave a strong impression, whether you&apos;re embarking on a new project or rejuvenating an existing site."
         />
         <ServiceCard
-          image={CreativeWeb}
+          icons={WebFlow}
           title='Webflow Development'
           description="Harness the potential of your online presence with our Webflow development services. Our creative web designs are designed to make a significant impact, whether you&apos;re launching a new website or refreshing your current one."
         />
         <ServiceCard
-          image={CreativeWeb}
+          icons={WordPress}
           title='Wordpress Development'
           description="Empower your online identity with our WordPress development solutions. Our creative web designs are tailored to make a lasting impact, whether you&apos;re starting anew or revamping your current website."
         />
-        <ServiceCard
-          image={UIUX}
+        {/* <ServiceCard
+
           title='UI/UX Design'
           description='User experience is paramount. Our UI/UX designers are dedicated to crafting user-friendly, visually appealing interfaces that captivate your audience. We prioritize usability, accessibility, and aesthetics to ensure a delightful digital journey.'
-        />
+        /> */}
         <ServiceCard
-          image={CUSTOMSOL}
+          icons={Custom_Solutions}
           title='Custom Solutions'
           description="We understand that every business is unique. If your requirements extend beyond our standard services, our team is ready to collaborate and create bespoke solutions tailored to your specific needs. Let&apos;s work together to build something truly exceptional."
         />

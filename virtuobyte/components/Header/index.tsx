@@ -20,11 +20,11 @@ const Navbar: React.FC = () => {
       if (window.scrollY > lastScrollY && !mobileMenu) {
         setShow("-translate-y-[80px] duration-300 trasnsition ease-in-out");
       } else {
-        setShow(" duration-300 trasnsition ease-in-out");
+        setShow("duration-300 trasnsition ease-in-out");
       }
       setLastScrollY(window.scrollY);
     } else {
-      setShow("translate-y-0");
+      setShow("translate-y-0 duration-300 trasnsition ease-in-out");
     }
   };
 
@@ -46,12 +46,12 @@ const Navbar: React.FC = () => {
   return (
     <>
      <div
-  className={`flex items-center sticky inset-x-0 top-0   py-4 z-[1000] justify-between ${
+  className={`flex items-center sticky inset-x-0 top-0 duration-300 trasnsition ease-in-out   py-4 z-[1000] justify-between ${
     menu ? "" : "dark:bg-black border-b dark:border-white border-black bg-white"
   } ${show}`}
 >
         <div
-          className={`z-[50] text-[25px] max-[600px]:text-[20px] font-[500] ${
+          className={`z-[50] text-[25px] transition-none max-[600px]:text-[20px] font-[500] ${
             menu && "opacity-0"
           }`}
         >
