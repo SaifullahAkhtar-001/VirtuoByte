@@ -10,7 +10,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, icons }) => {
   return (
-    <div className='flex flex-col gap-8 flex-1 border max-[650px]:min-w-[250px] min-w-[500px]  justify-between dark:border-white border-black rounded-xl p-6'>
+    <div className='flex flex-col gap-12 flex-1 border max-[650px]:min-w-[250px] min-w-[500px]  dark:border-white border-black rounded-xl p-6'>
       {icons && icons.length > 0 && (
         <div className='flex items-center flex-wrap gap-[20px]'>
           {icons.map((icon, index) => (
@@ -20,8 +20,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, ic
           ))}
         </div>
       )}
+      <div className='flex flex-col gap-4'>
       <div className='text-[28px] font-[500] break-words'>{title}</div>
       <div className='break-words text-[16px]'>{description}</div>
+      </div>
     </div>
   );
 };

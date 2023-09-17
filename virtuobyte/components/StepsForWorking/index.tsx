@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <div className="flex gap-4 max-[1000px]:gap-[3.5rem] max-[1000px]:flex-col my-[6rem]">
       <div className="flex flex-col gap-[1.5rem] justify-between border dark:border-white border-black rounded-xl max-[425px]:p-4   p-6 flex-1">
-        <div className="text-[28px] font-[600]">
+        <div className="text-[28px] font-[500]">
           The VirtuoByte Solution Journey in 5 Comprehensive Steps!
         </div>
         <div className="text-[16px] word-break">

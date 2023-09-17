@@ -50,13 +50,14 @@ const Navbar: React.FC = () => {
     menu ? "" : "dark:bg-black border-b dark:border-white border-black bg-white"
   } ${show}`}
 >
-        <div
+        <Link
+          href={'/'}
           className={`z-[50] text-[25px] transition-none max-[600px]:text-[20px] font-[500] ${
             menu && "opacity-0"
           }`}
         >
           VirtuoByte
-        </div>
+        </Link>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-4 z-[50]">
             {menu ? (

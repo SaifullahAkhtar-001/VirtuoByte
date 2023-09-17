@@ -11,6 +11,7 @@ import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Services from '@/components/Services'
 import Stack from '@/components/Stack'
+import ContactCTA from '@/components/ContactCTA'
 const page: React.FC = () => {
   return (
     <>
@@ -23,9 +24,7 @@ const page: React.FC = () => {
         <StreamlinedExperience />
       </div>
       <Services />
-      <div className='mb-[3rem]'>
-        <StepsForWorking />
-      </div>
+      <ContactCTA />
       <Projects />
       <Stack />
       <Testimonials />
