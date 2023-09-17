@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Header from "../components/Header";
+import Head from 'next/head';
 import { Providers } from "./providers";
 import { Montserrat } from "next/font/google";
 import ScrollObserver from "@/utils/scroll-observer";
@@ -21,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <head>
+        <link rel='icon' href='/1.svg'/>
+      </head>
       <body className={`dark:bg-black transition duration-300  bg-white max-[1000px]:mx-8 mx-16 my-4 ${inter.className}`}>
         <Providers>
         <Toaster/>

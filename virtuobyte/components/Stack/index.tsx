@@ -31,7 +31,7 @@ const index = () => {
                     <FaReact />
                     <TbBrandNextjs />
                     <SiTailwindcss />
-                    <BiLogoCss3/>,
+                    <BiLogoCss3/>
                     <AiFillHtml5/>
                     <DiSass />
                     <BiLogoJavascript />
@@ -51,7 +51,7 @@ const index = () => {
                     <FaReact />
                     <TbBrandNextjs />
                     <SiTailwindcss />
-                    <BiLogoCss3/>,
+                    <BiLogoCss3/>
                     <AiFillHtml5/>
                     <DiSass />
                     <BiLogoJavascript />
