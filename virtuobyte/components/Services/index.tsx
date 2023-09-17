@@ -13,7 +13,7 @@ import { FaPhp } from 'react-icons/fa';
 import { FaLaravel } from 'react-icons/fa';
 import { BsWordpress } from 'react-icons/bs';
 import { BiLogoCss3 } from 'react-icons/bi';
-import { AiFillHtml5,AiOutlineSolution } from 'react-icons/ai';
+import { AiFillHtml5, AiOutlineSolution } from 'react-icons/ai';
 import { BiLogoFlutter } from 'react-icons/bi';
 import { SiDart } from 'react-icons/si';
 import { LiaFigma } from 'react-icons/lia';
@@ -21,49 +21,53 @@ import { TbBrandWebflow } from 'react-icons/tb';
 
 const index = () => {
   const Full_Stack = [
-    <TbBrandNextjs />,
-    <FaReact />,
-    <FaLaravel />,
-    <SiNodedotjs />,
-    <SiExpress />,
-    <SiMongodb />,
-    <SiTypescript />,
-    <SiTailwindcss />,
-    <DiSass />
+    <TbBrandNextjs key="nextjs" />,
+    <FaReact key="react" />,
+    <FaLaravel key="laravel" />,
+    <SiNodedotjs key="nodejs" />,
+    <SiExpress key="express" />,
+    <SiMongodb key="mongodb" />,
+    <SiTypescript key="typescript" />,
+    <SiTailwindcss key="tailwindcss" />,
+    <DiSass key="sass" />
   ];
 
   const Front_End = [
-    <TbBrandNextjs />,
-    <FaReact />,
-    <SiTypescript />,
-    <BiLogoJavascript />,
-    <SiTailwindcss />,
-    <DiSass />
+    <TbBrandNextjs key="nextjs" />,
+    <FaReact key="react" />,
+    <SiTypescript key="typescript" />,
+    <BiLogoJavascript key="javascript" />,
+    <SiTailwindcss key="tailwindcss" />,
+    <DiSass key="sass" />
   ];
 
   const Back_End = [
-    <FaLaravel />,
-    <SiNodedotjs />,
-    <SiExpress />,
-    <SiMongodb />,
-    <FaPhp />,
-    <SiTypescript />,
-    <BiLogoJavascript />
+    <FaLaravel key="laravel" />,
+    <SiNodedotjs key="nodejs" />,
+    <SiExpress key="express" />,
+    <SiMongodb key="mongodb" />,
+    <FaPhp key="php" />,
+    <SiTypescript key="typescript" />,
+    <BiLogoJavascript key="javascript" />
   ];
+
   const WebFlow = [
-    <TbBrandWebflow />,
-    <BiLogoCss3 />,
-    <AiFillHtml5 />
+    <TbBrandWebflow key="webflow" />,
+    <BiLogoCss3 key="css3" />,
+    <AiFillHtml5 key="html5" />
   ];
+
   const WordPress = [
-    <BsWordpress />,
-    <FaPhp />,
-    <BiLogoCss3 />,
-    <AiFillHtml5 />
+    <BsWordpress key="wordpress" />,
+    <FaPhp key="php" />,
+    <BiLogoCss3 key="css3" />,
+    <AiFillHtml5 key="html5" />
   ];
-  const Custom_Solutions=[
-    <AiOutlineSolution/>
+
+  const Custom_Solutions = [
+    <AiOutlineSolution key="custom" />
   ];
+
   return (
     <div id='services' className='flex items-center scroll-mt-[80px]  flex-col my-[6rem] gap-8'>
       <div className='flex flex-col items-center my-8 '>
@@ -74,7 +78,7 @@ const index = () => {
         <ServiceCard
           icons={Full_Stack}
           title='Full-Stack Web Development'
-          description="Elevate your online presence with our full-stack web development services. Our creative web designs are crafted to leave a lasting impact, whether you&apos;sre launching a new website or giving your current one a fresh update."
+          description="Elevate your online presence with our full-stack web development services. Our creative web designs are crafted to leave a lasting impact, whether you&apos;re launching a new website or giving your current one a fresh update."
         />
         <ServiceCard
           icons={Front_End}
