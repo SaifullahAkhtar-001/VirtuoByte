@@ -96,11 +96,6 @@ const index = () => {
           title='Wordpress Development'
           description="Empower your online identity with our WordPress development solutions. Our creative web designs are tailored to make a lasting impact, whether you&apos;re starting anew or revamping your current website."
         />
-        {/* <ServiceCard
-
-          title='UI/UX Design'
-          description='User experience is paramount. Our UI/UX designers are dedicated to crafting user-friendly, visually appealing interfaces that captivate your audience. We prioritize usability, accessibility, and aesthetics to ensure a delightful digital journey.'
-        /> */}
         <ServiceCard
           icons={Custom_Solutions}
           title='Custom Solutions'
