@@ -12,7 +12,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, ic
   return (
     <div className='flex flex-col gap-8 flex-1 border max-[650px]:min-w-[250px] min-w-[500px]  justify-between dark:border-white border-black rounded-xl p-6'>
       {icons && icons.length > 0 && (
-        <div className='flex items-center gap-[20px]'>
+        <div className='flex items-center flex-wrap gap-[20px]'>
           {icons.map((icon, index) => (
             <div key={index} className='text-[40px] break-words'>
               {icon}
