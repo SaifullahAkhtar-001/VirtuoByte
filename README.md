@@ -21,4 +21,6 @@ Let's build the future of web solutions together!
 
 ## Screenshots
 ### Please note that the screenshots provided in this README may not fully capture the dynamic and interactive nature of our website's animations. To truly experience the magic of our site, we invite you to visit it live: https://www.virtuobyte.tech/
-![Screenshot 2023-09-27 at 03-54-50 VirtuoByte](https://github.com/mubashir05-beep/VirtuoByte/assets/100374421/93bc6a1b-6ca6-4d2a-9854-6b6a8cef7829)
+
+![Screenshot 2023-09-27 at 03-54-50 VirtuoByte](https://github.com/mubashir05-beep/VirtuoByte/assets/100374421/ae11ec8d-02d3-458c-b278-140aef1df3f8)
+
