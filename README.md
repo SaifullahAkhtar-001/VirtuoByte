@@ -19,5 +19,6 @@ Let's build the future of web solutions together!
 ### Deployment
 - **VERCEL**: Vercel is our chosen platform for deployment, providing a seamless experience for hosting and scaling our web applications.
 
-![Screenshot 2023-09-27 at 03-49-37 VirtuoByte](https://github.com/mubashir05-beep/VirtuoByte/assets/100374421/eca155d6-87a0-4437-a70e-1914e6a2dad2)
-
+## Screenshots
+### Please note that the screenshots provided in this README may not fully capture the dynamic and interactive nature of our website's animations. To truly experience the magic of our site, we invite you to visit it live: https://www.virtuobyte.tech/
+![Screenshot 2023-09-27 at 03-54-50 VirtuoByte](https://github.com/mubashir05-beep/VirtuoByte/assets/100374421/93bc6a1b-6ca6-4d2a-9854-6b6a8cef7829)
