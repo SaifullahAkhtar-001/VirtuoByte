@@ -10,7 +10,7 @@ import {
   WorkRight,
 } from "@/utils/works";
 
-import AARASTA from '@/public/assets/works/MacBook_Pro_16.png'
+import AARASTA from '@/public/assets/works/AARASTA.png'
 
 const Works = () => (
   <>
@@ -30,7 +30,7 @@ const Works = () => (
               <WorkRight progress={progress}>
                 <div className="max-w-[1100px]">
                   <img
-                    src='/assets/works/MacBook_Pro_16.png'
+                    src='/assets/works/AARASTA.png'
                     alt="Pink Panda"
                   />
                 </div>
@@ -40,7 +40,7 @@ const Works = () => (
         ></Tile>
         <div className="max-w-[1100px]">
           <img
-            src='/assets/works/MacBook_Pro_16.png'
+            src='/assets/works/AARASTA.png'
             alt="Pink Panda"
             className="opacity-0"
           />
