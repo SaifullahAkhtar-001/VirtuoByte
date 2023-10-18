@@ -19,11 +19,11 @@ export const WorkLeft: React.FC<{
   progress: number;
   children: React.ReactNode;
 }> = ({ children, progress }) => {
-  let translateY = Math.max(30, 50 - progress * 3 * 50);
-  if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50);
+  let translateY = Math.max(50, 20 - progress * 3 * 50);
+  // if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50);
   return (
     <div
-      className="flex flex-col dark:text-white text-black items-center justify-center text-3xl  h-[30vh] lg:h-auto"
+      className="flex flex-col dark:text-white text-black items-center justify-center text-3xl my-4  "
       style={{
         transform: `translateY(${translateY}px)`,
       }}
@@ -37,15 +37,15 @@ export const WorkRight: React.FC<{
   progress: number;
   children: React.ReactNode;
 }> = ({ children, progress }) => {
-  let translateY = Math.max(-90, -(progress - 0.9) * 50);
+  let translateY = Math.max(-50, -(progress - 0.9) * 400);
   return (
     <div
-      className="flex flex-1 lg:items-center justify-center h-screen"
+    className="flex items-center justify-center "
       style={{
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <div className="w-full  pt-10 lg:pt-0  md:px-0">
+      <div className="">
         {children}
       </div>
     </div>
