@@ -8,10 +8,12 @@ import useWindowDimension from "@/hooks/useWindowDimension";
 
 const Works = () => {
   const windowDimension: null | number = useWindowDimension();
-
+  useEffect(() => {
+    console.log( windowDimension);
+  }, []);
   return (
     <>
-      <TileWrapper numOfPages={2.02}>
+      <TileWrapper numOfPages={2.01}>
         <TileContent>
           <Tile
             page={0}
@@ -25,14 +27,20 @@ const Works = () => {
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                <img
-                    src={
-                      windowDimension && windowDimension <= 610
-                        ? "/assets/works/AARASTA_MOBILE.png"
-                        : "/assets/works/AARASTA.png"
-                    }
-                    alt="Pink Panda"
-                  />
+                
+                    <img
+                      src="/assets/works/AARASTA_MOBILE.png"
+                      alt="AARASTA"
+                      className="min-[650px]:hidden"
+                    />
+                 
+                    <img
+                      src="/assets/works/AARASTA.png"
+                      alt="AARASTA"
+                      className="max-[650px]:hidden"
+                    />
+                 
+                 
                 </WorkRight>
               </div>
             )}
