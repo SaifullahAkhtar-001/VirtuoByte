@@ -44,7 +44,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
         ref={refContainer}
         className="relative "
         style={{
-          height: numOfPages * 150 + "vh",
+          height: numOfPages * 100 + "vh",
         }}
       >
         {children}

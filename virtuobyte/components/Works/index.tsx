@@ -31,13 +31,13 @@ const Works = () => {
                     <img
                       src="/assets/works/AARASTA_MOBILE.png"
                       alt="AARASTA"
-                      className="min-[650px]:hidden"
+                      className="min-[650px]:hidden w-full"
                     />
                  
                     <img
                       src="/assets/works/AARASTA.png"
                       alt="AARASTA"
-                      className="max-[650px]:hidden"
+                      className="max-[650px]:hidden w-full"
                     />
                  
                  
@@ -58,14 +58,18 @@ const Works = () => {
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <img
-                    src={
-                      windowDimension && windowDimension <= 610
-                        ? "/assets/works/AARASTA_MOBILE.png"
-                        : "/assets/works/AARASTA.png"
-                    }
-                    alt="Pink Panda"
-                  />
+                <img
+                
+                      src="/assets/works/AARASTA_MOBILE.png"
+                      alt="AARASTA"
+                      className="min-[650px]:hidden w-full"
+                    />
+                 
+                    <img
+                      src="/assets/works/AARASTA.png"
+                      alt="AARASTA"
+                      className="max-[650px]:hidden w-full"
+                    />
                 </WorkRight>
               </div>
             )}
