@@ -11,12 +11,12 @@ const Works = () => {
 
   return (
     <>
-      <TileWrapper numOfPages={2.01}>
+      <TileWrapper numOfPages={2.02}>
         <TileContent>
           <Tile
             page={0}
             renderContent={({ progress }) => (
-              <div className="flex h-full items-center flex-col   w-full ">
+              <div className="flex h-full items-center justify-center flex-col w-full ">
                 <WorkLeft progress={progress}>
                   <span>We built</span>
                   <div className="text-4xl md:text-5xl font-semibold tracking-tight">
@@ -25,10 +25,7 @@ const Works = () => {
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <Image
-                    layout="responsive"
-                    width={501}
-                    height={1024}
+                <img
                     src={
                       windowDimension && windowDimension <= 610
                         ? "/assets/works/AARASTA_MOBILE.png"
@@ -53,10 +50,7 @@ const Works = () => {
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <Image
-                    layout="responsive"
-                    width={501}
-                    height={1024}
+                  <img
                     src={
                       windowDimension && windowDimension <= 610
                         ? "/assets/works/AARASTA_MOBILE.png"
