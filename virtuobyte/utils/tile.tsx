@@ -37,6 +37,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     currentPage = percentY * numOfPages;
     //   progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
   }
+  // progress
 
   return (
     <TileContext.Provider value={{ numOfPages, currentPage }}>
