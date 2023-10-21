@@ -37,7 +37,7 @@ export const WorkRight: React.FC<{
   progress: number;
   children: React.ReactNode;
 }> = ({ children, progress }) => {
-  let translateY = Math.max(-50, -(progress - 0.9) * 200);
+  let translateY = Math.max(-90, -(progress - 0.9) * 200);
   return (
     <div
     className="flex items-center justify-center "
