@@ -62,7 +62,7 @@ const Works = () => {
                 
                       src="/assets/works/AARASTA_MOBILE.png"
                       alt="AARASTA"
-                      className="min-[650px]:hidden  w-[70%]"
+                      className="min-[650px]:hidden  w-full"
                     />
                  
                     <img
