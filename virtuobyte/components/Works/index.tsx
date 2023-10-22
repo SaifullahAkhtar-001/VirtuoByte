@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import { Tile, TileContent, TileWrapper } from "@/utils/tile";
 import { WorkLeft, WorkLink, WorkRight } from "@/utils/works";
-
+// ss
 import useWindowDimension from "@/hooks/useWindowDimension";
 
 const Works = () => {
@@ -31,7 +31,7 @@ const Works = () => {
                     <img
                       src="/assets/works/AARASTA_MOBILE.png"
                       alt="AARASTA"
-                      className="min-[650px]:hidden w-full"
+                      className="min-[650px]:hidden "
                     />
                  
                     <img
@@ -62,7 +62,7 @@ const Works = () => {
                 
                       src="/assets/works/AARASTA_MOBILE.png"
                       alt="AARASTA"
-                      className="min-[650px]:hidden w-full"
+                      className="min-[650px]:hidden  w-full"
                     />
                  
                     <img
