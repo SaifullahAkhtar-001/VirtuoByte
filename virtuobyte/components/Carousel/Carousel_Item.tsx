@@ -8,6 +8,9 @@ interface Props {
   index: number;
   children: JSX.Element;
 }
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
+
 
 const CarouselItem: React.FC<Props> = ({ children, index }) => {
   const { embla: emblaApi, selectedIndex } = useContext(CarouselContext);
